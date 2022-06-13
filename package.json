@@ -1,0 +1,72 @@
+{
+  "name": "4c_ims",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.22",
+    "@amcharts/amcharts4-geodata": "^4.1.22",
+    "@babel/polyfill": "^7.4.4",
+    "@mdi/font": "5.9.55",
+    "@vue/composition-api": "^1.4.7",
+    "core-js": "^3.6.5",
+    "fancy-grid-vue": "^1.0.6",
+    "fancygrid": "^1.7.153",
+    "filepond": "^4.30.3",
+    "filepond-plugin-file-encode": "^2.1.10",
+    "filepond-plugin-file-metadata": "^1.0.8",
+    "filepond-plugin-file-validate-size": "^2.2.7",
+    "filepond-plugin-file-validate-type": "^1.2.8",
+    "filepond-plugin-image-preview": "^4.6.11",
+    "filepond-plugin-image-transform": "^3.8.7",
+    "jsbarcode": "^3.11.5",
+    "print-js": "^1.6.0",
+    "register-service-worker": "^1.7.1",
+    "roboto-fontface": "*",
+    "vue": "^2.6.11",
+    "vue-barcode": "^1.3.0",
+    "vue-html-to-paper": "^1.4.3",
+    "vue-masonry": "^0.14.1",
+    "vue-number-animation": "^1.1.1",
+    "vue-page-transition": "^0.2.2",
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.2.0",
+    "vue-tel-input-vuetify": "^1.4.1",
+    "vue-the-mask": "^0.11.1",
+    "vuescroll": "^4.17.3",
+    "vuetify": "^2.4.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-vuetify": "~2.4.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
